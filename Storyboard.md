@@ -27,10 +27,11 @@ Segue: 화면 전환(Show, Modal 등 지원).
 기본적으로 Main.storyboard 안에는 NSWindowController가 있으며,
  이를 AppDelegate.swift에서 연결해야 합니다.
 1️⃣ AppDelegate.swift 설정
+
 import Cocoa
 
-@main
-class AppDelegate: NSObject, NSApplicationDelegate {
+ @main
+ class AppDelegate: NSObject, NSApplicationDelegate {
     var window: NSWindow?
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
@@ -41,7 +42,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             window?.makeKeyAndOrderFront(nil)
         }
     }
-}
+ }
 
 NSStoryboard(name: "Main", bundle: nil)을 사용해 Storyboard에서 NSWindowController를 로드.
 instantiateController(withIdentifier:)를 통해 Storyboard에서 특정 컨트롤러를 가져옴.

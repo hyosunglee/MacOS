@@ -26,14 +26,16 @@ Segue: 화면 전환(Show, Modal 등 지원).
 🔹 기본적인 Storyboard 연결
 기본적으로 Main.storyboard 안에는 NSWindowController가 있으며,
  이를 AppDelegate.swift에서 연결해야 합니다.
+
 1️⃣ AppDelegate.swift 설정
 
+
+    
 import Cocoa
 
  @main
  class AppDelegate: NSObject, NSApplicationDelegate {
     var window: NSWindow?
-
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // 스토리보드에서 윈도우 로드
         let storyboard = NSStoryboard(name: "Main", bundle: nil)

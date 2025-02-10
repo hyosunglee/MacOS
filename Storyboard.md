@@ -32,6 +32,7 @@ Segue: 화면 전환(Show, Modal 등 지원).
 import Cocoa
 
 @main
+
 class AppDelegate: NSObject, NSApplicationDelegate {
     var window: NSWindow?
 
